@@ -1,4 +1,4 @@
-package com.shevlik;
+package com.company;
 
 import java.time.Instant;
 
@@ -47,7 +47,7 @@ public class Tunnel {
             try {
                 System.out.println(nameOfTrain + " is going through "+name);
                 long i;
-                wait(((i=endOfGoing.toEpochMilli()-Instant.now().toEpochMilli())<0)?1:i);
+                wait((i=endOfGoing.toEpochMilli()-Instant.now().toEpochMilli())<=0?10:i);
             }catch (InterruptedException ex){
                 System.out.println(ex.getMessage());
             }
