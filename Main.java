@@ -1,4 +1,8 @@
-package com.shevlik;
+package com.company;
+
+import java.time.Instant;
+
+import static java.lang.Thread.sleep;
 
 public class Main {
 
