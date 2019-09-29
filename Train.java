@@ -1,4 +1,4 @@
-package com.shevlik;
+package com.company;
 
 public class Train implements Runnable{
     private String name;
